@@ -1,7 +1,7 @@
 {
   "name": "deploy-script",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "start": "meteor run --port 3010",
     "deploy-staging": "node scripts/deploy.js staging",
