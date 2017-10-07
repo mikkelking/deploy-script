@@ -22,7 +22,23 @@ or
 npm run deploy-prod
 ```
 
-The example provided is using Meteor up to deploy, but you can just as easily use webpack or anything else.
+In your package.json you will need to add build targets, like this:
+
+```
+{
+  "name": "deploy-script",
+  "private": true,
+  "version": "1.0.2",
+  "scripts": {
+    "deploy-staging": "node scripts/deploy.js staging",
+    "deploy-prod": "node scripts/deploy.js prod"
+  },
+
+```
+
+Copy the file `scripts/deploy.js` from this repository into your project `scripts` folder.
+
+Modify the script for your own deployment. The example provided is using Meteor up to deploy, but you can just as easily use webpack or anything else.
 
 ## Target environments
 
