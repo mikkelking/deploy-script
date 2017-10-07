@@ -42,7 +42,7 @@ Modify the script for your own deployment. The example provided is using Meteor 
 
 ## Target environments
 
-There is a block of code like this:
+There is some configuration in the deploy.js script that looks like this:
 
 ```
 let choices = {
